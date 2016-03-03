@@ -1,0 +1,6 @@
+# == Class: r
+#
+class r {
+ 
+
+}
