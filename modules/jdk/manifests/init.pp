@@ -15,5 +15,10 @@ class jdk {
     }    
     package { "libmysql-java": 
         ensure => installed,
-    }    
+    }   
+
+    package { 'unzip':
+        ensure => latest,
+        require => Exec['apt-get update'],
+    } 
 }
