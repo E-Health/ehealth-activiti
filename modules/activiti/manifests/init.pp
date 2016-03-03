@@ -4,6 +4,11 @@ class activiti {
 
   $uri = "https://github.com/Activiti/Activiti/releases/download/${version}/activiti-${version}.zip"
 
+  package { 'unzip':
+    ensure => latest,
+    require => Exec['apt-get update'],
+  }
+
   exec { "wget_activiti":
     path => "/bin:/usr/bin",
     timeout     => 1800,
