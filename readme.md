@@ -1,6 +1,7 @@
-# Vagrant-ehealth
+# ehealth-activiti
+[Activiti](http://activiti.org/) is a light-weight workflow and Business Process Management (BPM) Platform. This puppet scripts downloads and installs Activiti in a tomcat container inside a virtual machine.
 
-Vagrant-ehealth is a vagrant script to install two popular open source EMR systems: OpenMRS and OSCAR McMaster. RStudio server is also installed along with these into a ubuntu trusty32 virtual machine.
+>> If you want to install OSCAR EMR or OpenMRS EMR, use [this script](https://github.com/E-Health/vagrant-ehealth)
 
 ## How to Use
 - Install [VirtualBox for your OS](https://www.virtualbox.org/)
@@ -12,12 +13,10 @@ Vagrant-ehealth is a vagrant script to install two popular open source EMR syste
 vagrant up
 ```
 
-> It takes approximately 30 minutes to create the machine initially.
+> It takes approximately 10 minutes to create the machine initially.
 
 ## Access in your browser:
-- Access OpenMRS at http://127.0.0.1:8001/openmrs (mysql password: mysql) (login:admin password:Admin123)
-- Access OSCAR at http://127.0.0.1:8001/Oscar10_12 (default login password on screen)
-- Access R Studio Server at http://127.0.0.1:8002/ (login:vagrant password:vagrant)
+- Access Activiti at http://localhost:8001/activiti-explorer 
 
 ## Suspend / Power down / Destroy
 To suspend the machine use and resume later
@@ -39,21 +38,10 @@ vagrant up
 ### Version
 1.0.0
 
-### Credits
-- [vagrant-OpenMRS](https://github.com/crolfe/vagrant-OpenMRS)
-- [OpenMRS](http://openmrs.org/)
-- [OSCAR](https://oscar-emr.com/)
-
-### Disclaimer
-This is for testing only. Not suitable for production.
-
 ### For more information visit [NuChange Blog](http://nuchange.ca)
 
 ### Contact Us on the IRC Channel ##ehealth 
 [![Visit our IRC channel](https://kiwiirc.com/buttons/irc.freenode.net/ehealth.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=nuchange|?##ehealth)
-
-### Contribute
-pull-requests welcome
 
 
 
