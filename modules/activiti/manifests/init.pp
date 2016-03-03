@@ -2,7 +2,7 @@ define download($uri, $timeout = 300) {
 
 }
 
-class openmrs {
+class activiti {
   $stage = "/home/vagrant/code/activiti-explorer.war"
   $target = '/var/lib/tomcat7/webapps/activiti-explorer.war'
 

@@ -38,6 +38,6 @@ include jdk
 include vim
 include mysql
 include tomcat
-include openmrs
-include oscar
+include activiti
+
 
