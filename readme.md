@@ -7,7 +7,8 @@
 - Install [VirtualBox for your OS](https://www.virtualbox.org/)
 - Install [Vagrant for your OS](https://www.vagrantup.com/)
 - Unzip / Clone this repository into a folder [Use the 'Download Zip' on the right panel]
-- cd to that folder
+- Windows Users can just doubleclick run.bat to start stop.bat to stop the VM.
+- (For Mac Users) cd to that folder
 
 ```sh
 vagrant up
