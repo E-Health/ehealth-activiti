@@ -18,6 +18,7 @@ vagrant up
 
 ## Access in your browser:
 - Access Activiti at http://localhost:8001/activiti-explorer 
+- Access REST interface at http://localhost:8001/activiti-rest/services
 
 ## Suspend / Power down / Destroy
 To suspend the machine use and resume later

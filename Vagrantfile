@@ -9,6 +9,16 @@ $script = <<SCRIPT
   echo Starting mysql...
   /etc/init.d/mysql start
 
+  #restarting tomcat
+  echo Restarting Tomcat Server...
+  /etc/init.d/tomcat7 restart
+
+  #move connector
+  cp code/db.properties /var/lib/tomcat7/webapps/activiti-explorer/WEB-INF/classes/db.properties
+  cp /home/vagrant/mysql-connector-java-bin.jar /var/lib/tomcat7/webapps/activiti-explorer/WEB-INF/lib/mysql-connector-java-bin.jar
+  cp code/db.properties /var/lib/tomcat7/webapps/activiti-rest/WEB-INF/classes/db.properties
+  cp /home/vagrant/mysql-connector-java-bin.jar /var/lib/tomcat7/webapps/activiti-rest/WEB-INF/lib/mysql-connector-java-bin.jar
+
 
   #restarting tomcat
   echo Restarting Tomcat Server...
