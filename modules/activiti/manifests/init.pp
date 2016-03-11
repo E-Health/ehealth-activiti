@@ -61,7 +61,7 @@ class activiti {
     subscribe => Exec["unzip_mysql"],
     refreshonly => true,
     path => "/bin:/usr/bin",
-    command => "mv /home/vagrant/mysql-connector-java-${version_mysql}/mysql-connector-java-${version_mysql}-bin.jar code/mysql-connector-java-bin.jar",
+    command => "mv /home/vagrant/mysql-connector-java-${version_mysql}/mysql-connector-java-${version_mysql}-bin.jar /home/vagrant/mysql-connector-java-bin.jar",
   }
 
   exec { "mysql_create_db":

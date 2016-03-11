@@ -15,9 +15,9 @@ $script = <<SCRIPT
 
   #move connector
   cp code/db.properties /var/lib/tomcat7/webapps/activiti-explorer/WEB-INF/classes/db.properties
-  cp code/mysql-connector-java-bin.jar /var/lib/tomcat7/webapps/activiti-explorer/WEB-INF/lib/mysql-connector-java-bin.jar
+  cp /home/vagrant/mysql-connector-java-bin.jar /var/lib/tomcat7/webapps/activiti-explorer/WEB-INF/lib/mysql-connector-java-bin.jar
   cp code/db.properties /var/lib/tomcat7/webapps/activiti-rest/WEB-INF/classes/db.properties
-  cp code/mysql-connector-java-bin.jar /var/lib/tomcat7/webapps/activiti-rest/WEB-INF/lib/mysql-connector-java-bin.jar
+  cp /home/vagrant/mysql-connector-java-bin.jar /var/lib/tomcat7/webapps/activiti-rest/WEB-INF/lib/mysql-connector-java-bin.jar
 
 
   #restarting tomcat
